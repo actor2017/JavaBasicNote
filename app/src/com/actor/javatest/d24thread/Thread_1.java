@@ -1,4 +1,6 @@
-package com.actor.javatest;
+package com.actor.javatest.d24thread;
+
+import java.util.*;
 
 /**
  * description: 线程
@@ -20,26 +22,30 @@ package com.actor.javatest;
  * 24.02_多线程(多线程并行和并发的区别)
  *  并行就是两个任务同时运行，就是甲任务进行的同时，乙任务也在进行。(需要多核CPU)
  *  并发是指两个任务都请求运行，而处理器只能按受一个任务，就把这两个任务安排轮流进行，由于时间间隔较短，使人感觉两个任务都在运行。
- *
- * 24.03_多线程(Java程序运行原理和JVM的启动是多线程的吗)
- *  A:Java程序运行原理
- *      Java命令会启动java虚拟机，启动JVM，等于启动了一个应用程序，也就是启动了一个进程。
- *      该进程会自动启动一个 “主线程” ，然后主线程去调用某个类的 main 方法。
- *  B:JVM的启动是多线程的吗
- *      JVM启动至少启动了垃圾回收线程和主线程，所以是多线程的。
  */
-public class J24Thread {
-
+public class Thread_1 {
 
     public static void main(String[] args) {
 //        test1();//证明jvm是多线程的, 结果: 交叉打印
 //        test2();//24.04_多线程(多线程程序实现的方式1), 继承Thread
 //        test3();//24.05_多线程(多线程程序实现的方式2), 实现Runnable
-        test4();//24.08_多线程(匿名内部类实现线程的两种方式)
+//        test4();//24.08_多线程(匿名内部类实现线程的两种方式)
+
+//        test5();//27_19 视频00:05:33 多次启动同一个线程是非法的. 当一个线程已经结束执行后, 不能再重新启动.
+
+        /**
+         * 24.21_多线程(以前的线程安全的类回顾)
+         */
+        test6();
     }
 
     /**
-     * 证明jvm是多线程的, 结果: 交叉打印
+     * 24.03_多线程(Java程序运行原理和JVM的启动是多线程的吗)
+     *  A:Java程序运行原理
+     *      Java命令会启动java虚拟机，启动JVM，等于启动了一个应用程序，也就是启动了一个进程。
+     *      该进程会自动启动一个 “主线程” ，然后主线程去调用某个类的 main 方法。
+     *  B:JVM的启动是多线程的吗
+     *      JVM启动至少启动了垃圾回收线程和主线程，所以是多线程的。
      */
     private static void test1() {
         for(int i = 0; i < 1000000; i++) {
@@ -133,5 +139,45 @@ public class J24Thread {
                 }
             }
         }).start();                             //4,开启线程
+    }
+
+
+    /**
+     * 27_19 视频00:05:33 多次启动同一个线程是非法的. 当一个线程已经结束执行后, 不能再重新启动.
+     */
+    private static void test5() {
+        MyThread mt = new MyThread();
+        mt.start();
+        mt.start();
+        mt.start();
+        mt.start();
+        mt.start();
+    }
+
+
+    /**
+     * 24.21_多线程(以前的线程安全的类回顾)
+     * 线程安全 :
+     *  @see java.util.Vector#add(Object)
+     *  @see StringBuffer#append(Object)
+     *  @see java.util.Hashtable#put(Object, Object)
+     *
+     * 线程不安全:
+     *  @see java.util.ArrayList#add(Object)
+     *  @see StringBuilder#append(Object)
+     *  @see java.util.HashMap#put(Object, Object)
+     *
+     * 返回线程安全的 List, Map, Set, SortedMap, SortedSet
+     * @see java.util.Collections#synchronizedCollection(Collection) 返回指定 collection 支持的同步（线程安全的）collection
+     * @see java.util.Collections#synchronizedList(List) 返回指定列表支持的同步（线程安全的）列表。
+     * @see java.util.Collections#synchronizedList(List, Object) 返回指定列表支持的同步（线程安全的）列表
+     * @see java.util.Collections#synchronizedMap(Map) 返回由指定映射支持的同步（线程安全的）映射
+     * @see java.util.Collections#synchronizedSet(Set) 返回指定 set 支持的同步（线程安全的）set
+     * @see java.util.Collections#synchronizedSet(Set, Object) 返回指定 set 支持的同步（线程安全的）set
+     * @see java.util.Collections#synchronizedSortedMap(SortedMap) 返回指定有序映射支持的同步（线程安全的）有序映射
+     * @see java.util.Collections#synchronizedSortedSet(SortedSet) 返回指定有序 set 支持的同步（线程安全的）有序 set
+     */
+    private static void test6() {
+//        Collections...    //还有很多方法
     }
 }
