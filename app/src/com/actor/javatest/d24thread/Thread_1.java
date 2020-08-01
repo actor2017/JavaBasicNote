@@ -7,6 +7,8 @@ import java.util.*;
  * author     : 李大发
  * date       : 2020/7/23 on 15:29
  *
+ * ★★★ Thread implements Runnable ★★★
+ *
  * 今日内容
  *  多线程的概述
  *  jvm运行的原理
@@ -158,9 +160,9 @@ public class Thread_1 {
     /**
      * 24.21_多线程(以前的线程安全的类回顾)
      * 线程安全 :
-     *  @see java.util.Vector#add(Object)
+     *  @see java.util.Vector#add(Object)               //List
      *  @see StringBuffer#append(Object)
-     *  @see java.util.Hashtable#put(Object, Object)
+     *  @see java.util.Hashtable#put(Object, Object)    //Map
      *
      * 线程不安全:
      *  @see java.util.ArrayList#add(Object)
@@ -169,11 +171,12 @@ public class Thread_1 {
      *
      * 返回线程安全的 List, Map, Set, SortedMap, SortedSet
      * @see java.util.Collections#synchronizedCollection(Collection) 返回指定 collection 支持的同步（线程安全的）collection
-     * @see java.util.Collections#synchronizedList(List) 返回指定列表支持的同步（线程安全的）列表。
-     * @see java.util.Collections#synchronizedList(List, Object) 返回指定列表支持的同步（线程安全的）列表
+     * @see java.util.Collections#synchronizedList(List) 返回指定列表支持的同步（线程安全的）列表
+     * @see非public java.util.Collections#synchronizedList(List, Object) 返回指定列表支持的同步（线程安全的）列表
+     *                                                          参2: 互斥, 互斥锁
      * @see java.util.Collections#synchronizedMap(Map) 返回由指定映射支持的同步（线程安全的）映射
      * @see java.util.Collections#synchronizedSet(Set) 返回指定 set 支持的同步（线程安全的）set
-     * @see java.util.Collections#synchronizedSet(Set, Object) 返回指定 set 支持的同步（线程安全的）set
+     * @see非public java.util.Collections#synchronizedSet(Set, Object) 返回指定 set 支持的同步（线程安全的）set
      * @see java.util.Collections#synchronizedSortedMap(SortedMap) 返回指定有序映射支持的同步（线程安全的）有序映射
      * @see java.util.Collections#synchronizedSortedSet(SortedSet) 返回指定有序 set 支持的同步（线程安全的）有序 set
      */
