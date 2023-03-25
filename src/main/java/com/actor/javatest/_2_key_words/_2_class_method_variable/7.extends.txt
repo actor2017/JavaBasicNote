@@ -1,0 +1,4 @@
+extends 继承、扩展
+extends 关键字用在 class 或 interface 声明中，用于指示所声明的类或接口是其名称后跟有 extends 关键字的类或接口的子类。
+子类继承父类的所有 public 和 protected 变量和方法。 子类可以重写父类的任何非 final 方法。一个类只能扩展一个其他类。
+

@@ -1,0 +1,6 @@
+abstract 声明抽象
+abstract关键字可以修改类或方法。
+abstract类可以扩展（增加子类），但不能直接实例化。
+abstract方法不在声明它的类中实现，但必须在某个子类中重写。
+采用 abstract方法的类本来就是抽象类，并且必须声明为abstract。
+

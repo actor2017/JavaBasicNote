@@ -1,0 +1,12 @@
+01.11_Java语言基础(JDK安装路径下的目录解释)(了解)
+a:bin目录：该目录用于存放一些可执行程序。
+    如javac.exe（java编译器）、java.exe(java运行工具)，jar.exe(打包工具) 和 javadoc.exe(文档生成工具)等。
+
+b:db目录：是一个小型的数据库。
+    从JDK 6.0开始，Java中引用了一个新的成员JavaDB，这是一个纯Java实现、开源的数据库管理系统。这个数据库不仅轻便，而且支持JDBC 4.0所有的规范，在学习JDBC 时，不再需要额外地安装一个数据库软件，选择直接使用JavaDB即可。
+
+c:jre目录    ："jre"是 Java Runtime Environment 的缩写，意为Java程序运行时环境。此目录是Java运行时环境的根目录，它包括Java虚拟机，运行时的类包，Java应用启动器以及一个bin目录，但不包含开发环境中的开发工具。
+d:include目录：由于JDK是通过C和C++实现的，因此在启动时需要引入一些C语言的头文件，该目录就是用于存放这些头文件的。
+e:lib目录    ：lib是library的缩写，意为 Java 类库或库文件，是开发工具使用的归档包文件。
+f:src.zip文件：src.zip为src文件夹的压缩文件，src中放置的是JDK核心类的源代码，通过该文件可以查看Java基础类的源代码。
+

@@ -1,0 +1,14 @@
+
+1.新建一个文件: test.java //test要可类名一样
+
+2.写如下代码:
+public class test {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+
+3.在java文件所在的文件夹中打开cmd, 然后运行一下命令:
+  javac F:\xxx\xxx\xxx\test.java
+  java test
+

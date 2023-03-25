@@ -1,0 +1,38 @@
+xp系统
+右键点击桌面计算机→选择属性→选择高级选项卡→点击环境变量→下方系统变量中查找path→双击path→将jdk安装目录下的bin目录添加到最左边并添加分号。
+
+win7/win8系统
+右键点击桌面计算机→选择属性→选择高级系统设置→选择高级选项卡→点击环境变量→下方系统变量中查找path→双击path→将jdk安装目录下的bin目录添加到最左边并添加分号。
+
+path配置的是可执行的文件.exe, 配置后可以在不同的盘符下访问path路径下的可执行文件
+
+
+☆☆☆☆☆
+Path环境变量的配置方式2		掌握
+1.创建新的变量名称JAVA_HOME
+2.为JAVA_HOME添加变量值:D:\programfiles\Javajdk1.7.0_72
+3.将Path环境变量中Jdk目录修改为	%JAVA_HOME%\bin;
+C:最后说一下path是有先后顺序关系的
+
+
+classpath环境变量配置(在任意目录都可以java运行指定目录或者当前目录的.class文件)
+1.环境变量,新建:
+		变量名:	classpath
+		变量值:	.;C:\Test(例)	//在路径前加了个"."表示当前路径。
+			↑
+			点:表示本目录
+
+
+path配置的是可执行的文件.exe,配置后可以在不同的盘符下访问path路径下的可执行文件
+classpath配置的java的类文件,就是.class文件
+
+
+测试是否配置成功:
+【运行】->CMD:输入命令java   回车后应该会出现java的各种命令；
+		      javac  也会出现相关编译的命令；
+		      java -version 出现jdk版本号，ps：注意java和javac都是命令（动词），后面-version可理解为宾语，中间是有空格的.
+                      set java_home命令可以看到jdk安装目录；
+                      set path   可以看到path变量的值，各种程序的执行路径
+                      set classpath可以看到类装载路径
+
+

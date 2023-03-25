@@ -1,0 +1,6 @@
+final 最终、不可改变
+final 关键字可以应用于类，以指示不能扩展该类（不能有子类）。
+final 关键字可以应用于方法，以指示在子类中不能重写此方法。
+一个类不能同时是 abstract 又是 final。 abstract 意味着必须扩展类，final 意味着不能扩展类。
+一个方法不能同时是 abstract 又是 final。abstract 意味着必须重写方法，final 意味着不能重写方法。
+
