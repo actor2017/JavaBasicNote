@@ -1,0 +1,8 @@
+throws 声明一个异常可能被抛出
+throws 关键字可以应用于方法，以便指出方法引发了特定类型的异常。 
+
+throws 关键字将逗号分隔的 java.lang.Throwables 列表作为参数。 
+
+引发非 RuntimeException 异常的任何方法还必须在方法声明中使用 throws 修饰符来声明它引发的异常。 
+
+要在 try-catch 块中包含带 throws 子句的方法的调用，必须提供该方法的调用者。

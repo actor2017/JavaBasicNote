@@ -1,0 +1,10 @@
+float 浮点
+float 是 Java 原始类型。float 变量可以存储单精度浮点值。 
+
+使用此关键字时应遵循下列规则： 
+
+Java 中的浮点文字始终默认为双精度。要指定单精度文字值，应在数值后加上 f 或 F，如 0.01f。 
+
+由于浮点数据类型是实际数值的近似值，因此，一般不要对浮点数值进行是否相等的比较。 
+
+Java 浮点数值可代表无穷大和 NaN（非数值）。Float 包装对象类用来定义常量 MIN_VALUE、MAX_VALUE、NEGATIVE_INFINITY、POSITIVE_INFINITY 和 NaN。

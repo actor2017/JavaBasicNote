@@ -1,0 +1,2 @@
+instanceof 实例
+instanceof 关键字用来确定对象所属的类。

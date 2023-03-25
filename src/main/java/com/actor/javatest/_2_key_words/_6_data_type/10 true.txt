@@ -1,0 +1,2 @@
+true 真
+true 关键字表示 boolean 变量的两个合法值中的一个。

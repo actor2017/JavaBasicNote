@@ -1,0 +1,6 @@
+null 空
+null 是 Java 的保留字，表示无值。 
+
+将 null 赋给非原始变量相当于释放该变量先前所引用的对象。 
+
+不能将 null 赋给原始类型（byte、short、int、long、char、float、double、boolean）变量。

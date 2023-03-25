@@ -1,0 +1,6 @@
+case 返回观察里的结果
+case 用来标记 switch 语句中的每个分支。 
+
+case 块没有隐式结束点。break 语句通常在每个 case 块末尾使用，用于退出 switch 语句。 
+
+如果没有 break 语句，执行流将进入所有后面的 case 和/或 default 块。

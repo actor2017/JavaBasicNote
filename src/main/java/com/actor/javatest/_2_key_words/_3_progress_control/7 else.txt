@@ -1,0 +1,2 @@
+else 否则
+else 关键字总是在 if-else 语句中与 if 关键字结合使用。else 子句是可选的，如果 if 条件为 false，则执行该子句。

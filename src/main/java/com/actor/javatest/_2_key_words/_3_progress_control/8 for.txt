@@ -1,0 +1,10 @@
+for 循环
+for 关键字用于指定一个在每次迭代结束前检查其条件的循环。 
+
+for 语句的形式为 for(initialize; condition; increment) 
+
+控件流进入 for 语句时，将执行一次 initialize 语句。 
+
+每次执行循环体之前将计算 condition 的结果。如果 condition 为 true，则执行循环体。 
+
+每次执行循环体之后，在计算下一个迭代的 condition 之前，将执行 increment 语句。

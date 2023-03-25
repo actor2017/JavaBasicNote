@@ -1,0 +1,6 @@
+throw 抛出一个异常对象
+throw 关键字用于引发异常。 
+
+throw 语句将 java.lang.Throwable 作为参数。Throwable 在调用栈中向上传播，直到被适当的 catch 块捕获。 
+
+引发非 RuntimeException 异常的任何方法还必须在方法声明中使用 throws 修饰符来声明它引发的异常。

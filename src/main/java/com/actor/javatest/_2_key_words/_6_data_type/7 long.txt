@@ -1,0 +1,6 @@
+long 长整型
+long 是 Java 原始类型。long 变量可以存储 64 位的带符号整数。 
+
+Long 类是 long 原始类型的包装对象类。它定义代表此类型的值的范围的 MIN_VALUE 和 MAX_VALUE 常量。 
+
+Java 中的所有整数值都是 32 位的 int 值，除非值后面有 l 或 L（如 235L），这表示该值应解释为 long。

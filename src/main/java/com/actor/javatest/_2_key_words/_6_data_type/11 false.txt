@@ -1,0 +1,2 @@
+false 假
+false 关键字代表 boolean 变量的两个合法值之一。

@@ -1,0 +1,8 @@
+boolean 布尔型
+boolean 是 Java 原始类型。boolean 变量的值可以是 true 或 false。 
+
+boolean 变量只能以 true 或 false 作为值。boolean 不能与数字类型相互转换。 
+
+包含 boolean 操作数的表达式只能包含 boolean 操作数。 
+
+Boolean 类是 boolean 原始类型的包装对象类。

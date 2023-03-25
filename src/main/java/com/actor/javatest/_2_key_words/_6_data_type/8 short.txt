@@ -1,0 +1,6 @@
+short 短整型
+short 是 Java 原始类型。short 变量可以存储 16 位带符号的整数。 
+
+Short 类是 short 原始类型的包装对象类。它定义代表此类型的值的范围的 MIN_VALUE 和 MAX_VALUE 常量。 
+
+Java 中的所有整数值都是 32 位的 int 值，除非值后面有 l 或 L（如 235L），这表示该值应解释为 long。

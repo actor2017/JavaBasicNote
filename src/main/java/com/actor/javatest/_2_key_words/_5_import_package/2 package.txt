@@ -1,0 +1,8 @@
+package 包
+package 关键字指定在 Java 源文件中声明的类所驻留的 Java 包。 
+
+package 语句（如果出现）必须是 Java 源文件中的第一个非注释性文本。 
+
+例:java.lang.Object。 
+
+如果 Java 源文件不包含 package 语句，在该文件中定义的类将位于“默认包”中。请注意，不能从非默认包中的类引用默认包中的类。
