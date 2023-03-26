@@ -1,5 +1,0 @@
-continue 继续
-continue 关键字用来跳转到 for、while 或 do 循环的下一个迭代。 
-
-continue 总是跳到最深层 while、for 或 do 语句的下一个迭代。
-
